@@ -18,3 +18,6 @@ out/
 # Temporary files
 *.tmp
 *.log
+
+# Course handout PDFs stay local unless the teacher asks to publish them.
+*.pdf
