@@ -1,0 +1,20 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Build outputs
+build/
+.gradle/
+out/
+
+# Kotlin / Java packaged outputs
+*.class
+*.jar
+*.war
+*.ear
+
+# Temporary files
+*.tmp
+*.log
