@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CameraXApp</string>
+    <string name="take_photo">TAKE PHOTO</string>
+    <string name="start_capture">START CAPTURE</string>
+    <string name="stop_capture">STOP CAPTURE</string>
+    <string name="analysis_on">ANALYSIS ON</string>
+    <string name="analysis_off">ANALYSIS OFF</string>
+    <string name="switch_camera">SWITCH CAMERA</string>
+</resources>

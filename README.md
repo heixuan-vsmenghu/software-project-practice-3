@@ -8,6 +8,7 @@
 |---|---|---|
 | 实验二 | [E2_Kotlin_Android_Basics](E2_Kotlin_Android_Basics/) | Kotlin 基本语法、综合练习代码、Kotlin Koans 本地验证 |
 | 实验 2-2 | [E2_2_Compose_Layout](E2_2_Compose_Layout/README.md) | 构建 Kotlin Compose Android 应用、完成布局练习与 AI 应用布局原型 |
+| 实验 2-3 | [E2_3_CameraX_App](E2_3_CameraX_App/README.md) | 构建 Android CameraX 应用，完成预览、拍照、录像、权限申请与 ImageAnalysis 亮度分析 |
 
 ## 当前完成情况
 
@@ -18,3 +19,7 @@
 - 实验 2-2 README：[E2_2_Compose_Layout/README.md](E2_2_Compose_Layout/README.md)
 - Compose 学习笔记：[E2_2_Compose_Layout/ComposeNotes.md](E2_2_Compose_Layout/ComposeNotes.md)
 - Compose 布局设计说明：[E2_2_Compose_Layout/docs/layout_design.md](E2_2_Compose_Layout/docs/layout_design.md)
+- 实验 2-3 README：[E2_3_CameraX_App/README.md](E2_3_CameraX_App/README.md)
+- CameraX 学习笔记：[E2_3_CameraX_App/CameraXNotes.md](E2_3_CameraX_App/CameraXNotes.md)
+- CameraX 代码流程说明：[E2_3_CameraX_App/docs/code_flow.md](E2_3_CameraX_App/docs/code_flow.md)
+- LiteRT 扩展计划：[E2_3_CameraX_App/docs/ai_extension_plan.md](E2_3_CameraX_App/docs/ai_extension_plan.md)
