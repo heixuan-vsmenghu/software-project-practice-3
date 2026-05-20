@@ -20,6 +20,11 @@ out/
 # Temporary files
 *.tmp
 *.log
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.env
+.venv/
 
 # Course handout PDFs stay local unless the teacher asks to publish them.
 *.pdf

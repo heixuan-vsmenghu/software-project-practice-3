@@ -9,6 +9,7 @@
 | 实验二 | [E2_Kotlin_Android_Basics](E2_Kotlin_Android_Basics/) | Kotlin 基本语法、综合练习代码、Kotlin Koans 本地验证 |
 | 实验 2-2 | [E2_2_Compose_Layout](E2_2_Compose_Layout/README.md) | 构建 Kotlin Compose Android 应用、完成布局练习与 AI 应用布局原型 |
 | 实验 2-3 | [E2_3_CameraX_App](E2_3_CameraX_App/README.md) | 构建 Android CameraX 应用，完成预览、拍照、录像、权限申请与 ImageAnalysis 亮度分析 |
+| 实验 3 | [E3_Notebook_Basics](E3_Notebook_Basics/README.md) | Jupyter Notebook 基础实践、Python 选择排序、Pandas Fortune 500 数据分析与 Matplotlib 可视化 |
 
 ## 当前完成情况
 
@@ -23,3 +24,4 @@
 - CameraX 学习笔记：[E2_3_CameraX_App/CameraXNotes.md](E2_3_CameraX_App/CameraXNotes.md)
 - CameraX 代码流程说明：[E2_3_CameraX_App/docs/code_flow.md](E2_3_CameraX_App/docs/code_flow.md)
 - LiteRT 扩展计划：[E2_3_CameraX_App/docs/ai_extension_plan.md](E2_3_CameraX_App/docs/ai_extension_plan.md)
+- 实验 3：Jupyter Notebook 基础实践：[E3_Notebook_Basics/README.md](E3_Notebook_Basics/README.md)

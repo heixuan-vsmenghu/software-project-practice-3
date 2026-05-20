@@ -1,0 +1,10 @@
+name: e3-notebook-basics
+channels:
+  - defaults
+dependencies:
+  - python
+  - notebook
+  - pandas
+  - matplotlib
+  - numpy
+  - nbconvert
