@@ -191,6 +191,8 @@ TFLClassify/start/build/outputs/apk/debug/start-debug.apk
 
 ![App 最终效果](images/final_app_overview.png)
 
+![GitHub 提交记录](images/github_commit_history.png)
+
 ## 新增解析课件补充说明
 
 老师新发的 `10_TFLClassify_智能图像分类APP_解析.pdf` 是实验 4 的解析补充，不是新实验。本项目已根据新 PPT 补充 CameraX、TFLite、ViewModel、LiveData、RecyclerView 的运行链路说明，并检查了代码实现。
