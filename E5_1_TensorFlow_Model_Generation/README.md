@@ -27,6 +27,7 @@
 | 不使用已废弃 Model Maker 作为主方案 | 已改用 TensorFlow / Keras + TensorFlow Lite Converter |
 | 使用实验四应用验证生成模型 | 已接入 E4 `start` 模块，构建成功并在模拟器运行推理 |
 | 共享 Jupyter Notebook | 已生成 `.ipynb` 和 `.html` |
+| 上传 GitHub | 已提交并 push 到课程仓库 main 分支 |
 | 撰写 Markdown 文档 | 已完成 README、Notes、model_info 和 Android 集成文档 |
 
 ## 四、项目结构
@@ -238,6 +239,8 @@ daisy / 49.0%, roses / 30.0%, tulips / 14.8%
 ![E4 自训练模型运行结果](images/e4_self_trained_model_result.png)
 
 ![E4 Logcat 推理结果](images/e4_logcat_inference_result.png)
+
+![GitHub 提交记录](images/github_commit_history.png)
 
 ## 十四、遇到的问题与解决
 
