@@ -40,18 +40,23 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.RecyclerView
-import org.tensorflow.lite.examples.classification.ml.FlowerModel
 import org.tensorflow.lite.examples.classification.ui.RecognitionAdapter
 import org.tensorflow.lite.examples.classification.util.YuvToRgbConverter
 import org.tensorflow.lite.examples.classification.viewmodel.Recognition
 import org.tensorflow.lite.examples.classification.viewmodel.RecognitionListViewModel
-import org.tensorflow.lite.gpu.CompatibilityList
-import org.tensorflow.lite.support.image.TensorImage
-import org.tensorflow.lite.support.model.Model
+import org.tensorflow.lite.Interpreter
+import java.io.FileInputStream
+import java.nio.ByteBuffer
+import java.nio.ByteOrder
+import java.nio.MappedByteBuffer
+import java.nio.channels.FileChannel
 import java.util.concurrent.Executors
 
 // Constants
 private const val MAX_RESULT_DISPLAY = 3 // Maximum number of results displayed
+private const val MODEL_INPUT_SIZE = 224
+private const val MODEL_ASSET_PATH = "FlowerModel.tflite"
+private const val LABELS_ASSET_PATH = "labels.txt"
 private const val TAG = "TFL Classify" // Name for logging
 private const val REQUEST_CODE_PERMISSIONS = 999 // Return code after asking for permission
 private val REQUIRED_PERMISSIONS = arrayOf(Manifest.permission.CAMERA) // permission needed
@@ -210,52 +215,49 @@ class MainActivity : AppCompatActivity() {
     private class ImageAnalyzer(ctx: Context, private val listener: RecognitionListener) :
         ImageAnalysis.Analyzer {
 
-        // TODO 1: Add class variable TensorFlow Lite Model
-        // Initializing the flowerModel by lazy so that it runs in the same thread when the process
-        // method is called.
-        private val flowerModel: FlowerModel by lazy {
-
-            // TODO 6. Optional GPU acceleration
-            val compatList = CompatibilityList()
-
-            val options = if (compatList.isDelegateSupportedOnThisDevice) {
-                Log.d(TAG, "This device is GPU Compatible")
-                Model.Options.Builder().setDevice(Model.Device.GPU).build()
-            } else {
-                Log.d(TAG, "This device is GPU Incompatible")
-                Model.Options.Builder().setNumThreads(4).build()
+        private val interpreter: Interpreter by lazy {
+            val options = Interpreter.Options().apply {
+                setNumThreads(4)
             }
+            Interpreter(loadModelFile(ctx, MODEL_ASSET_PATH), options)
+        }
 
-            FlowerModel.newInstance(ctx, options)
+        private val labels: List<String> by lazy {
+            ctx.assets.open(LABELS_ASSET_PATH).bufferedReader().useLines { lines ->
+                lines.map { it.trim() }
+                    .filter { it.isNotEmpty() }
+                    .toList()
+            }
         }
 
         override fun analyze(imageProxy: ImageProxy) {
 
             try {
-                val items = mutableListOf<Recognition>()
-
-                // TODO 2: Convert Image to Bitmap then to TensorImage
                 val bitmap = toBitmap(imageProxy)
                 if (bitmap == null) {
                     listener(emptyList())
                     return
                 }
-                val tfImage = TensorImage.fromBitmap(bitmap)
 
-                // TODO 3: Process the image using the trained model, sort and pick out the top results
+                val resizedBitmap = Bitmap.createScaledBitmap(
+                    bitmap,
+                    MODEL_INPUT_SIZE,
+                    MODEL_INPUT_SIZE,
+                    true
+                )
+                val inputBuffer = bitmapToInputBuffer(resizedBitmap)
+                val outputScores = Array(1) { FloatArray(labels.size) }
+
                 val startTime = SystemClock.uptimeMillis()
-                val outputs = flowerModel.process(tfImage)
-                    .probabilityAsCategoryList
-                    .apply {
-                        sortByDescending { it.score }
-                    }
-                    .take(MAX_RESULT_DISPLAY)
+                interpreter.run(inputBuffer, outputScores)
                 val elapsedTime = SystemClock.uptimeMillis() - startTime
 
-                // TODO 4: Converting the top probability items into a list of recognitions
-                for (output in outputs) {
-                    items.add(Recognition(output.label, output.score))
-                }
+                val items = outputScores[0]
+                    .mapIndexed { index, score ->
+                        Recognition(labels.getOrElse(index) { "class_$index" }, score)
+                    }
+                    .sortedByDescending { it.confidence }
+                    .take(MAX_RESULT_DISPLAY)
 
                 Log.d(TAG, "Inference time: ${elapsedTime}ms; results: ${items.joinToString()}")
 
@@ -269,6 +271,44 @@ class MainActivity : AppCompatActivity() {
                 imageProxy.close()
             }
 
+        }
+
+        private fun bitmapToInputBuffer(bitmap: Bitmap): ByteBuffer {
+            val inputBuffer = ByteBuffer.allocateDirect(
+                4 * MODEL_INPUT_SIZE * MODEL_INPUT_SIZE * 3
+            )
+            inputBuffer.order(ByteOrder.nativeOrder())
+
+            val pixels = IntArray(MODEL_INPUT_SIZE * MODEL_INPUT_SIZE)
+            bitmap.getPixels(
+                pixels,
+                0,
+                MODEL_INPUT_SIZE,
+                0,
+                0,
+                MODEL_INPUT_SIZE,
+                MODEL_INPUT_SIZE
+            )
+
+            for (pixel in pixels) {
+                inputBuffer.putFloat(((pixel shr 16) and 0xFF).toFloat())
+                inputBuffer.putFloat(((pixel shr 8) and 0xFF).toFloat())
+                inputBuffer.putFloat((pixel and 0xFF).toFloat())
+            }
+            inputBuffer.rewind()
+            return inputBuffer
+        }
+
+        private fun loadModelFile(context: Context, assetPath: String): MappedByteBuffer {
+            context.assets.openFd(assetPath).use { fileDescriptor ->
+                FileInputStream(fileDescriptor.fileDescriptor).channel.use { fileChannel ->
+                    return fileChannel.map(
+                        FileChannel.MapMode.READ_ONLY,
+                        fileDescriptor.startOffset,
+                        fileDescriptor.declaredLength
+                    )
+                }
+            }
         }
 
         /**

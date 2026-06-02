@@ -1,0 +1,19 @@
+name: e5-tensorflow-model-generation
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy=1.23
+  - matplotlib
+  - pandas
+  - scikit-learn
+  - pillow
+  - notebook
+  - nbconvert
+  - nbformat
+  - ipykernel
+  - pip:
+      - tensorflow==2.10.1
+      - pymupdf

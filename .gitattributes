@@ -1,0 +1,7 @@
+*.tflite binary
+*.keras binary
+*.png binary
+*.pb binary
+*.data-* binary
+*.index binary
+*.zip binary

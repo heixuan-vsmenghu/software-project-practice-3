@@ -1,0 +1,80 @@
+﻿06-02 17:31:26.391  1493  1493 D ActivityThread: Package [org.tensorflow.lite.examples.classification] reported as REPLACED, but missing application info. Assuming REMOVED.
+06-02 17:31:26.404  1493  1493 D ActivityThread: Package [org.tensorflow.lite.examples.classification] reported as REPLACED, but missing application info. Assuming REMOVED.
+06-02 17:31:27.759  1140  1247 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[org.tensorflow.lite.examples.classification]
+06-02 17:31:27.799   606   630 V WindowManager: Sent Transition (#12) createdAt=06-02 17:31:25.587 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=46 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=org.tensorflow.lite.examples.classification/.MainActivity } baseActivity=ComponentInfo{org.tensorflow.lite.examples.classification/org.tensorflow.lite.examples.classification.MainActivity} topActivity=ComponentInfo{org.tensorflow.lite.examples.classification/org.tensorflow.lite.examples.classification.MainActivity} origActivity=null realActivity=ComponentInfo{org.tensorflow.lite.examples.classification/org.tensorflow.lite.examples.classification.MainActivity} numActivities=1 lastActiveTime=119653 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{6347493 Task{53e7f1b #46 type=standard A=10212:org.tensorflow.lite.examples.classification}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{c8c9cd0 org.tensorflow.lite.examples.classification.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=1080 topActivityLetterboxHeight=2400 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 12 }
+06-02 17:31:27.799   606   630 V WindowManager:         {WCT{RemoteToken{6347493 Task{53e7f1b #46 type=standard A=10212:org.tensorflow.lite.examples.classification}}} m=OPEN f=NONE leash=Surface(name=Task=46)/@0x58f8b8a sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0 taskParent=-1},
+06-02 17:31:27.800   606   644 I ActivityManager: Start proc 2816:org.tensorflow.lite.examples.classification/u0a212 for next-top-activity {org.tensorflow.lite.examples.classification/org.tensorflow.lite.examples.classification.MainActivity}
+06-02 17:31:27.810   606   834 I SdkSandboxManager: No SDKs used. Skipping SDK data reconcilation for CallingInfo{mUid=10212, mPackageName='org.tensorflow.lite.examples.classification, mAppProcessToken='null'}
+06-02 17:31:27.810   606   834 I SdkSandboxManager: No SDKs used. Skipping SDK data reconcilation for CallingInfo{mUid=10212, mPackageName='org.tensorflow.lite.examples.classification, mAppProcessToken='null'}
+06-02 17:31:27.861  1333  1333 I AiAiEcho: AppFetcherImpl onPackageChanged org.tensorflow.lite.examples.classification.
+06-02 17:31:27.869  1333  2275 I AiAiEcho: AppIndexer Package:[org.tensorflow.lite.examples.classification] UserProfile:[0] Enabled:[true].
+06-02 17:31:27.869  1333  2275 I AiAiEcho: AppFetcherImplV2 updateApps package:[org.tensorflow.lite.examples.classification], userId:[0], reason:[package is updated.].
+06-02 17:31:28.245   606   825 D ShortcutService: replacing package: org.tensorflow.lite.examples.classification userId0
+06-02 17:31:28.245   606   825 D ShortcutService: handlePackageUpdateFinished: org.tensorflow.lite.examples.classification user=0
+06-02 17:31:28.246   606   825 D ShortcutService: rescanPackageIfNeeded 0@org.tensorflow.lite.examples.classification, forceRescan=true , isNewApp=true
+06-02 17:31:28.246   606   825 D ShortcutService: Package org.tensorflow.lite.examples.classification has 0 manifest shortcut(s), and 0 share target(s)
+06-02 17:31:28.831  2816  2816 W ziparchive: Unable to open '/data/app/~~1dCCkv-poL-M6GAQJXj5xw==/org.tensorflow.lite.examples.classification-mtdh-NdU3qcZXLhw8InhKA==/base.dm': No such file or directory
+06-02 17:31:28.831  2816  2816 W ziparchive: Unable to open '/data/app/~~1dCCkv-poL-M6GAQJXj5xw==/org.tensorflow.lite.examples.classification-mtdh-NdU3qcZXLhw8InhKA==/base.dm': No such file or directory
+06-02 17:31:29.013  2816  2816 D nativeloader: Configuring clns-7 for other apk /data/app/~~1dCCkv-poL-M6GAQJXj5xw==/org.tensorflow.lite.examples.classification-mtdh-NdU3qcZXLhw8InhKA==/base.apk. target_sdk_version=29, uses_libraries=, library_path=/data/app/~~1dCCkv-poL-M6GAQJXj5xw==/org.tensorflow.lite.examples.classification-mtdh-NdU3qcZXLhw8InhKA==/lib/x86_64:/data/app/~~1dCCkv-poL-M6GAQJXj5xw==/org.tensorflow.lite.examples.classification-mtdh-NdU3qcZXLhw8InhKA==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/org.tensorflow.lite.examples.classification
+06-02 17:31:29.906   606   606 I Telecom : CarModeTracker: Package org.tensorflow.lite.examples.classification is not tracked.: SSH.oR@AEc
+06-02 17:31:30.259  1018  1018 D CarrierSvcBindHelper: onPackageUpdateFinished: org.tensorflow.lite.examples.classification
+06-02 17:31:30.267  1018  1018 D CarrierSvcBindHelper: onPackageModified: org.tensorflow.lite.examples.classification
+06-02 17:31:30.374   606  1474 D CoreBackPreview: Window{5ce0ded u0 org.tensorflow.lite.examples.classification/org.tensorflow.lite.examples.classification.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@a70c70, mPriority=0, mIsAnimationCallback=false}
+06-02 17:31:30.814  1018  1432 D ImsResolver: maybeAddedImsService, packageName: org.tensorflow.lite.examples.classification
+06-02 17:31:30.975   606   630 W ziparchive: Unable to open '/data/app/~~1dCCkv-poL-M6GAQJXj5xw==/org.tensorflow.lite.examples.classification-mtdh-NdU3qcZXLhw8InhKA==/base.dm': No such file or directory
+06-02 17:31:30.989   606   630 I ActivityTaskManager: Displayed org.tensorflow.lite.examples.classification/.MainActivity for user 0: +5s839ms
+06-02 17:31:31.383  2816  2816 D .classification: Successfully queried cache dir: /data/user_de/0/org.tensorflow.lite.examples.classification/code_cache
+06-02 17:31:31.383  2816  2816 D RenderScript: Setting cache dir: /data/user_de/0/org.tensorflow.lite.examples.classification/code_cache
+06-02 17:31:31.646   606  2668 D CoreBackPreview: Window{6876a83 u0 Splash Screen org.tensorflow.lite.examples.classification EXITING}: Setting back callback null
+06-02 17:31:31.649   606  2657 W InputManager-JNI: Input channel object '6876a83 Splash Screen org.tensorflow.lite.examples.classification (client)' was disposed without first being removed with the input manager!
+06-02 17:31:31.673   606   737 I ImeTracker: org.tensorflow.lite.examples.classification:1db7da7a: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+06-02 17:31:31.673   606   737 I ImeTracker: org.tensorflow.lite.examples.classification:1db7da7a: onCancelled at PHASE_SERVER_SHOULD_HIDE
+06-02 17:31:31.702   501  1483 I CameraService: CameraService::connect call (PID 2816 "org.tensorflow.lite.examples.classification", camera ID 10) and Camera API version 2
+06-02 17:31:31.722   501  1483 I Camera2ClientBase: Camera 10: Opened. Client: org.tensorflow.lite.examples.classification (PID 2816, UID 10212)
+06-02 17:31:31.761  1223  1223 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=org.tensorflow.lite.examples.classification, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+06-02 17:31:31.778   606  1477 W PackageConfigPersister: App-specific configuration not found for packageName: org.tensorflow.lite.examples.classification and userId: 0
+06-02 17:31:34.401  2816  2942 D TFL Classify: Initalise toBitmap()
+06-02 17:31:34.434  1235  1249 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~1dCCkv-poL-M6GAQJXj5xw==/org.tensorflow.lite.examples.classification-mtdh-NdU3qcZXLhw8InhKA==/base.apk' with 1 weak references
+06-02 17:31:36.182  2816  2942 D nativeloader: Load /data/app/~~1dCCkv-poL-M6GAQJXj5xw==/org.tensorflow.lite.examples.classification-mtdh-NdU3qcZXLhw8InhKA==/lib/x86_64/libtensorflowlite_jni.so using ns clns-7 from class loader (caller=/data/app/~~1dCCkv-poL-M6GAQJXj5xw==/org.tensorflow.lite.examples.classification-mtdh-NdU3qcZXLhw8InhKA==/base.apk): ok
+06-02 17:31:38.039  2816  2942 D TFL Classify: Inference time: 1269ms; results: roses / 40.9%, daisy / 40.8%, tulips / 13.1%
+06-02 17:31:39.411  2816  2816 W .classification: Verification of java.util.List org.tensorflow.lite.examples.classification.DataBinderMapperImpl.collectDependencies() took 273.006ms (54.94 bytecodes/s) (2528B approximate peak alloc)
+06-02 17:31:41.501  2816  2942 D TFL Classify: Inference time: 1537ms; results: daisy / 49.0%, roses / 30.0%, tulips / 14.8%
+06-02 17:31:43.181  1594  1594 I SafetyLabelChangedBroadcastReceiver: received broadcast packageName: org.tensorflow.lite.examples.classification, current user: UserHandle{0}, packageChangeEvent: UPDATE, intent user: UserHandle{0}
+06-02 17:31:43.478  2816  2942 D TFL Classify: Inference time: 1210ms; results: daisy / 42.7%, roses / 36.8%, tulips / 13.7%
+06-02 17:31:46.246  2816  2942 D TFL Classify: Inference time: 1204ms; results: roses / 50.0%, daisy / 34.5%, tulips / 12.2%
+06-02 17:31:48.167  2816  2942 D TFL Classify: Inference time: 84ms; results: daisy / 43.0%, roses / 39.1%, tulips / 11.1%
+06-02 17:31:50.087  2816  2942 D TFL Classify: Inference time: 1001ms; results: roses / 44.3%, daisy / 36.7%, tulips / 11.2%
+06-02 17:31:52.584  2816  2942 D TFL Classify: Inference time: 120ms; results: roses / 46.7%, daisy / 37.0%, tulips / 10.1%
+06-02 17:31:52.605   866   866 D ActivityThread: Package [org.tensorflow.lite.examples.classification] reported as REPLACED, but missing application info. Assuming REMOVED.
+06-02 17:31:52.606   866   866 D ActivityThread: Package [org.tensorflow.lite.examples.classification] reported as REPLACED, but missing application info. Assuming REMOVED.
+06-02 17:31:57.827  2816  2942 D TFL Classify: Inference time: 3099ms; results: roses / 39.8%, daisy / 38.5%, tulips / 16.2%
+06-02 17:32:00.187  2816  2942 D TFL Classify: Inference time: 628ms; results: roses / 40.3%, daisy / 39.8%, tulips / 12.3%
+06-02 17:32:02.453  2816  2942 D TFL Classify: Inference time: 851ms; results: roses / 57.7%, daisy / 26.1%, tulips / 11.8%
+06-02 17:32:03.281  2816  2942 D TFL Classify: Inference time: 73ms; results: roses / 45.7%, daisy / 35.2%, tulips / 14.3%
+06-02 17:32:03.989  2816  2942 D TFL Classify: Inference time: 72ms; results: roses / 50.7%, daisy / 36.6%, tulips / 9.2%
+06-02 17:32:06.893  2816  2942 D TFL Classify: Inference time: 870ms; results: roses / 45.7%, daisy / 37.0%, tulips / 9.7%
+06-02 17:32:08.661  1642  1653 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~1dCCkv-poL-M6GAQJXj5xw==/org.tensorflow.lite.examples.classification-mtdh-NdU3qcZXLhw8InhKA==/base.apk' with 1 weak references
+06-02 17:32:09.114  2816  2942 D TFL Classify: Inference time: 511ms; results: daisy / 40.7%, roses / 38.9%, tulips / 11.9%
+06-02 17:32:10.877  2816  2942 D TFL Classify: Inference time: 530ms; results: daisy / 39.7%, roses / 39.5%, tulips / 12.4%
+06-02 17:32:13.611  2816  2942 D TFL Classify: Inference time: 916ms; results: roses / 48.1%, daisy / 34.8%, tulips / 12.1%
+06-02 17:32:15.407  2816  2942 D TFL Classify: Inference time: 99ms; results: roses / 51.1%, daisy / 32.3%, tulips / 12.7%
+06-02 17:32:16.643  1870  1870 I Finsky  : [2] sqb.kf(64): IQ: onPackageRemoved org.tensorflow.lite.examples.classification, replacing=true, uninstallingFromPlay=false
+06-02 17:32:18.217  2816  2942 D TFL Classify: Inference time: 2100ms; results: daisy / 50.1%, roses / 31.3%, tulips / 10.7%
+06-02 17:32:20.913  2816  2942 D TFL Classify: Inference time: 1509ms; results: daisy / 52.1%, roses / 27.3%, tulips / 12.4%
+06-02 17:32:21.587  2816  2942 D TFL Classify: Inference time: 268ms; results: roses / 39.6%, daisy / 38.6%, tulips / 14.0%
+06-02 17:32:23.471  2816  2942 D TFL Classify: Inference time: 687ms; results: roses / 44.8%, daisy / 39.7%, tulips / 10.4%
+06-02 17:32:23.758  1642  3170 W SQLiteLog: (28) double-quoted string literal: "org.tensorflow.lite.examples.classification"
+06-02 17:32:24.968  2816  2942 D TFL Classify: Inference time: 909ms; results: daisy / 43.2%, roses / 39.9%, tulips / 12.0%
+06-02 17:32:26.431  2816  2942 D TFL Classify: Inference time: 560ms; results: roses / 42.4%, daisy / 39.2%, tulips / 10.2%
+06-02 17:32:27.852  2816  2942 D TFL Classify: Inference time: 1142ms; results: daisy / 40.8%, roses / 34.1%, tulips / 18.3%
+06-02 17:32:28.602  2816  2942 D TFL Classify: Inference time: 233ms; results: daisy / 40.5%, roses / 39.5%, tulips / 12.8%
+06-02 17:32:30.611  2816  2942 D TFL Classify: Inference time: 1298ms; results: roses / 39.3%, daisy / 37.7%, tulips / 15.0%
+06-02 17:32:31.576  2816  2942 D TFL Classify: Inference time: 76ms; results: roses / 41.9%, daisy / 40.1%, tulips / 13.1%
+06-02 17:32:32.687   866   877 W ndroid.systemui: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~1dCCkv-poL-M6GAQJXj5xw==/org.tensorflow.lite.examples.classification-mtdh-NdU3qcZXLhw8InhKA==/base.apk' with 1 weak references
+06-02 17:32:33.625  2816  2942 D TFL Classify: Inference time: 683ms; results: roses / 51.9%, daisy / 33.4%, tulips / 10.2%
+06-02 17:32:35.159  2816  2942 D TFL Classify: Inference time: 950ms; results: roses / 46.8%, daisy / 37.6%, tulips / 11.5%
+06-02 17:32:36.182  2816  2942 D TFL Classify: Inference time: 604ms; results: daisy / 50.6%, roses / 28.2%, tulips / 11.5%
+06-02 17:32:37.366  2816  2942 D TFL Classify: Inference time: 700ms; results: daisy / 46.4%, roses / 31.3%, tulips / 12.4%
+06-02 17:32:38.133  2816  2942 D TFL Classify: Inference time: 485ms; results: roses / 43.1%, daisy / 40.2%, tulips / 11.0%
+06-02 17:32:38.839  2816  2942 D TFL Classify: Inference time: 82ms; results: daisy / 44.1%, roses / 33.4%, tulips / 13.2%
+06-02 17:32:39.668  2816  2942 D TFL Classify: Inference time: 718ms; results: daisy / 42.7%, roses / 30.6%, tulips / 17.1%

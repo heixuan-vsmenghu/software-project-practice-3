@@ -1,0 +1,11 @@
+tensorflow==2.10.1
+numpy==1.23.5
+matplotlib
+pandas
+scikit-learn
+pillow
+notebook==6.5.7
+nbconvert
+nbformat
+ipykernel
+pymupdf

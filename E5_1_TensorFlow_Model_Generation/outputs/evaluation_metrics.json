@@ -1,0 +1,21 @@
+{
+  "val_loss": 0.358786404132843,
+  "val_accuracy": 0.8814713954925537,
+  "classes": [
+    "daisy",
+    "dandelion",
+    "roses",
+    "sunflowers",
+    "tulips"
+  ],
+  "image_size": [
+    224,
+    224
+  ],
+  "batch_size": 32,
+  "epochs": 5,
+  "feature_extraction_seconds": 1.71,
+  "training_device": "local Windows CPU",
+  "tensorflow_version": "2.10.1",
+  "python_version": "3.10.2"
+}

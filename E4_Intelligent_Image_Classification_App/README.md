@@ -242,3 +242,23 @@ TFLClassify/start/build/outputs/apk/debug/start-debug.apk
 - `9_实验4_实现智能图像分类APP.pdf`
 - `10_TFLClassify_智能图像分类APP_解析.pdf`
 - Android CameraX、LiveData、Data Binding、TensorFlow Lite / LiteRT 官方文档
+
+## 十六、实验 5-1 模型接入补充
+
+在实验 5-1 中，`TFLClassify/start` 模块已接入自训练花卉分类模型：
+
+```text
+../E5_1_TensorFlow_Model_Generation/models/FlowerModel_E5.tflite
+```
+
+替换后的 E4 模型路径仍为：
+
+```text
+TFLClassify/start/src/main/ml/FlowerModel.tflite
+```
+
+由于 E5 自训练模型没有原始示例模型的 metadata，Android 端已从 ML Model Binding 的 `probabilityAsCategoryList` 调整为 `Interpreter + labels.txt` 手动映射输出。详细记录见：
+
+```text
+../E5_1_TensorFlow_Model_Generation/android_integration/
+```

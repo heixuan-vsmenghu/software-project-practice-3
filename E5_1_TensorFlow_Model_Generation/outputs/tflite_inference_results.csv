@@ -1,0 +1,11 @@
+image,true_label,pred_label,score
+C:\Users\Administrator\.keras\datasets\flower_photos\daisy\100080576_f52e8ee070_n.jpg,daisy,daisy,0.855445384979248
+C:\Users\Administrator\.keras\datasets\flower_photos\daisy\10140303196_b88d3d6cec.jpg,daisy,daisy,0.9191977381706238
+C:\Users\Administrator\.keras\datasets\flower_photos\dandelion\10043234166_e6dd915111_n.jpg,dandelion,dandelion,0.9944167137145996
+C:\Users\Administrator\.keras\datasets\flower_photos\dandelion\10200780773_c6051a7d71_n.jpg,dandelion,daisy,0.6729404926300049
+C:\Users\Administrator\.keras\datasets\flower_photos\roses\10090824183_d02c613f10_m.jpg,roses,roses,0.87406325340271
+C:\Users\Administrator\.keras\datasets\flower_photos\roses\102501987_3cdb8e5394_n.jpg,roses,roses,0.9990842342376709
+C:\Users\Administrator\.keras\datasets\flower_photos\sunflowers\1008566138_6927679c8a.jpg,sunflowers,sunflowers,0.8779273629188538
+C:\Users\Administrator\.keras\datasets\flower_photos\sunflowers\1022552002_2b93faf9e7_n.jpg,sunflowers,sunflowers,0.9925899505615234
+C:\Users\Administrator\.keras\datasets\flower_photos\tulips\100930342_92e8746431_n.jpg,tulips,tulips,0.9451982378959656
+C:\Users\Administrator\.keras\datasets\flower_photos\tulips\10094729603_eeca3f2cb6.jpg,tulips,tulips,0.46572422981262207
