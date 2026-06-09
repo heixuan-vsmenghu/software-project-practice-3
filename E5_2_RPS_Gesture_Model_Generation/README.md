@@ -157,13 +157,9 @@ C:\Temp\e5tf310\Scripts\python.exe -m nbconvert --to html notebooks\E5_2_RPS_Ges
 
 ![Python 端 TFLite 推理记录](images/python_tflite_inference_result.png)
 
+![GitHub Notebook 渲染](images/github_notebook_render.png)
 
-
-以下截图当前未生成，README 未引用为图片：
-
-- `github_notebook_render.png`
-
-- `github_commit_history.png`
+![GitHub 提交记录](images/github_commit_history.png)
 
 ## 十六、遇到的问题与解决方法
 
