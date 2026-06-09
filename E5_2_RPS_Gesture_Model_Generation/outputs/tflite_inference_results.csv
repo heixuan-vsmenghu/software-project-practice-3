@@ -1,0 +1,10 @@
+image,true_label,pred_label,score,top3
+H:\福建师范大学\大三下\软件实践研发（3）\E5_2_RPS_Gesture_Model_Generation\data\rps-test-set\paper\testpaper01-00.png,paper,paper,0.8650516867637634,paper:0.8651; scissors:0.1348; rock:0.0001
+H:\福建师范大学\大三下\软件实践研发（3）\E5_2_RPS_Gesture_Model_Generation\data\rps-test-set\paper\testpaper01-01.png,paper,paper,0.8675822019577026,paper:0.8676; scissors:0.1323; rock:0.0001
+H:\福建师范大学\大三下\软件实践研发（3）\E5_2_RPS_Gesture_Model_Generation\data\rps-test-set\paper\testpaper01-02.png,paper,paper,0.8787971138954163,paper:0.8788; scissors:0.1211; rock:0.0001
+H:\福建师范大学\大三下\软件实践研发（3）\E5_2_RPS_Gesture_Model_Generation\data\rps-test-set\rock\testrock01-00.png,rock,rock,1.0,rock:1.0000; paper:0.0000; scissors:0.0000
+H:\福建师范大学\大三下\软件实践研发（3）\E5_2_RPS_Gesture_Model_Generation\data\rps-test-set\rock\testrock01-01.png,rock,rock,1.0,rock:1.0000; paper:0.0000; scissors:0.0000
+H:\福建师范大学\大三下\软件实践研发（3）\E5_2_RPS_Gesture_Model_Generation\data\rps-test-set\rock\testrock01-02.png,rock,rock,1.0,rock:1.0000; paper:0.0000; scissors:0.0000
+H:\福建师范大学\大三下\软件实践研发（3）\E5_2_RPS_Gesture_Model_Generation\data\rps-test-set\scissors\testscissors01-00.png,scissors,scissors,0.996051013469696,scissors:0.9961; paper:0.0035; rock:0.0004
+H:\福建师范大学\大三下\软件实践研发（3）\E5_2_RPS_Gesture_Model_Generation\data\rps-test-set\scissors\testscissors01-01.png,scissors,scissors,0.9962645173072815,scissors:0.9963; paper:0.0033; rock:0.0004
+H:\福建师范大学\大三下\软件实践研发（3）\E5_2_RPS_Gesture_Model_Generation\data\rps-test-set\scissors\testscissors01-02.png,scissors,scissors,0.9968835711479187,scissors:0.9969; paper:0.0028; rock:0.0004

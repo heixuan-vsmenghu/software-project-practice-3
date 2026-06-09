@@ -1,0 +1,42 @@
+{
+  "test_loss": 0.019105214625597,
+  "test_accuracy": 1.0,
+  "class_indices": {
+    "paper": 0,
+    "rock": 1,
+    "scissors": 2
+  },
+  "class_names": [
+    "paper",
+    "rock",
+    "scissors"
+  ],
+  "image_size": [
+    150,
+    150
+  ],
+  "batch_size": 32,
+  "epochs": 5,
+  "train_counts": {
+    "paper": 840,
+    "rock": 840,
+    "scissors": 840
+  },
+  "test_counts": {
+    "paper": 124,
+    "rock": 124,
+    "scissors": 124
+  },
+  "python_version": "3.10.2",
+  "tensorflow_version": "2.10.1",
+  "numpy_version": "1.23.5",
+  "matplotlib_version": "3.10.9",
+  "pandas_version": "2.3.3",
+  "gpu_devices": [],
+  "training_device": "local Windows CPU",
+  "training_seconds": 211.15,
+  "final_train_accuracy": 0.9672619104385376,
+  "final_val_accuracy": 0.942460298538208,
+  "final_train_loss": 0.10186504572629929,
+  "final_val_loss": 0.2308243364095688
+}

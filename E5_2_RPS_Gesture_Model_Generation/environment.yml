@@ -1,0 +1,17 @@
+name: e5-2-rps-model-generation
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - matplotlib
+  - pandas
+  - scikit-learn
+  - pillow
+  - jupyter
+  - nbconvert
+  - pip:
+      - tensorflow
+      - PyMuPDF

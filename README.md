@@ -12,6 +12,7 @@
 | 实验 3 | [E3_Notebook_Basics](E3_Notebook_Basics/README.md) | Jupyter Notebook 基础实践、Python 选择排序、Pandas Fortune 500 数据分析与 Matplotlib 可视化 |
 | 实验 4 | [E4_Intelligent_Image_Classification_App](E4_Intelligent_Image_Classification_App/README.md) | 基于 TFLClassify start 模块实现 CameraX + TensorFlow Lite 花卉图像分类 App |
 | 实验 5-1 | [E5_1_TensorFlow_Model_Generation](E5_1_TensorFlow_Model_Generation/README.md) | 使用 TensorFlow / Keras 训练花卉分类模型，转换 TFLite，并接入实验 4 App 验证 |
+| 实验 5-2 | [E5_2_RPS_Gesture_Model_Generation](E5_2_RPS_Gesture_Model_Generation/README.md) | 使用 TensorFlow / Keras 训练石头剪刀布手势分类模型，转换 TFLite，并完成 Python 端推理验证 |
 
 ## 当前完成情况
 
@@ -29,3 +30,4 @@
 - 实验 3：Jupyter Notebook 基础实践：[E3_Notebook_Basics/README.md](E3_Notebook_Basics/README.md)
 - 实验 4：实现智能图像分类 APP：[E4_Intelligent_Image_Classification_App/README.md](E4_Intelligent_Image_Classification_App/README.md)
 - 实验 5-1：TensorFlow 模型生成：[E5_1_TensorFlow_Model_Generation/README.md](E5_1_TensorFlow_Model_Generation/README.md)
+- 实验 5-2：TensorFlow 石头剪刀布手势模型生成：[E5_2_RPS_Gesture_Model_Generation/README.md](E5_2_RPS_Gesture_Model_Generation/README.md)

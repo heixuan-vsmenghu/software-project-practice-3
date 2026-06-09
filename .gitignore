@@ -28,3 +28,9 @@ __pycache__/
 
 # Course handout PDFs stay local unless the teacher asks to publish them.
 *.pdf
+
+# Experiment 5-2 downloads the RPS image dataset automatically.
+E5_2_RPS_Gesture_Model_Generation/data/rps.zip
+E5_2_RPS_Gesture_Model_Generation/data/rps-test-set.zip
+E5_2_RPS_Gesture_Model_Generation/data/rps/
+E5_2_RPS_Gesture_Model_Generation/data/rps-test-set/

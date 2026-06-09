@@ -1,0 +1,33 @@
+Model: "rps_sequential_cnn"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d_1 (Conv2D)           (None, 148, 148, 32)      896       
+                                                                 
+ maxpool_1 (MaxPooling2D)    (None, 74, 74, 32)        0         
+                                                                 
+ conv2d_2 (Conv2D)           (None, 72, 72, 64)        18496     
+                                                                 
+ maxpool_2 (MaxPooling2D)    (None, 36, 36, 64)        0         
+                                                                 
+ conv2d_3 (Conv2D)           (None, 34, 34, 128)       73856     
+                                                                 
+ maxpool_3 (MaxPooling2D)    (None, 17, 17, 128)       0         
+                                                                 
+ conv2d_4 (Conv2D)           (None, 15, 15, 128)       147584    
+                                                                 
+ maxpool_4 (MaxPooling2D)    (None, 7, 7, 128)         0         
+                                                                 
+ flatten (Flatten)           (None, 6272)              0         
+                                                                 
+ dropout (Dropout)           (None, 6272)              0         
+                                                                 
+ dense_1 (Dense)             (None, 256)               1605888   
+                                                                 
+ predictions (Dense)         (None, 3)                 771       
+                                                                 
+=================================================================
+Total params: 1,847,491
+Trainable params: 1,847,491
+Non-trainable params: 0
+_________________________________________________________________
