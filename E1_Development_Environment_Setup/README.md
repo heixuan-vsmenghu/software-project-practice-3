@@ -95,6 +95,8 @@ VS Code 版本为 1.117.0，已检测到 Python、Pylance、debugpy 和 Jupyter 
 
 ![GitHub 上传状态](images/github_upload_status.png)
 
+![GitHub 提交记录](images/github_commit_history.png)
+
 ## 十、遇到的问题与解决
 
 | 问题 | 原因 | 解决 |
