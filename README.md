@@ -6,6 +6,7 @@
 
 | 实验 | 目录 | 内容 |
 |---|---|---|
+| 实验 1 | [E1_Development_Environment_Setup](E1_Development_Environment_Setup/README.md) | 开发环境安装与基础配置，验证 Android Studio、Jupyter、VS Code、Git、JDK 和 Android SDK |
 | 实验二 | [E2_Kotlin_Android_Basics](E2_Kotlin_Android_Basics/) | Kotlin 基本语法、综合练习代码、Kotlin Koans 本地验证 |
 | 实验 2-2 | [E2_2_Compose_Layout](E2_2_Compose_Layout/README.md) | 构建 Kotlin Compose Android 应用、完成布局练习与 AI 应用布局原型 |
 | 实验 2-3 | [E2_3_CameraX_App](E2_3_CameraX_App/README.md) | 构建 Android CameraX 应用，完成预览、拍照、录像、权限申请与 ImageAnalysis 亮度分析 |
@@ -16,6 +17,7 @@
 
 ## 当前完成情况
 
+- 实验 1：开发环境安装与基础配置：[E1_Development_Environment_Setup/README.md](E1_Development_Environment_Setup/README.md)
 - 实验二 README：[E2_Kotlin_Android_Basics/README.md](E2_Kotlin_Android_Basics/README.md)
 - Kotlin 语法笔记：[E2_Kotlin_Android_Basics/KotlinSyntaxNotes.md](E2_Kotlin_Android_Basics/KotlinSyntaxNotes.md)
 - Kotlin 综合练习：[E2_Kotlin_Android_Basics/PlaygroundPractice/kotlin_basic_practice.kt](E2_Kotlin_Android_Basics/PlaygroundPractice/kotlin_basic_practice.kt)

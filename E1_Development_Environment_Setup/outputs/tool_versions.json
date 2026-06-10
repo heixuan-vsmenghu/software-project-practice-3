@@ -1,0 +1,130 @@
+{
+  "system": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python_runtime": "3.10.2"
+  },
+  "android_studio": {
+    "path": "E:\\development\\Android\\Studio20252",
+    "launcher": "E:\\development\\Android\\Studio20252\\bin\\studio64.exe",
+    "version": "AI-252.25557.131.2521.14344949",
+    "buildNumber": "252.25557.131.2521.14344949",
+    "dataDirectoryName": "AndroidStudio2025.2.1",
+    "name": "Android Studio",
+    "build_txt": "AI-252.25557.131.2521.14344949"
+  },
+  "android_sdk": {
+    "path": "E:\\development\\Android\\sdk",
+    "exists": true,
+    "platform_tools": true,
+    "emulator_dir": true,
+    "platforms": [
+      "android-30",
+      "android-36"
+    ],
+    "build_tools": [
+      "29.0.2",
+      "35.0.0",
+      "36.1.0"
+    ]
+  },
+  "commands": {
+    "git": {
+      "command": "git --version",
+      "returncode": 0,
+      "stdout": "git version 2.51.0.windows.1",
+      "stderr": ""
+    },
+    "python_default": {
+      "command": "python --version",
+      "returncode": 0,
+      "stdout": "Python 3.10.2",
+      "stderr": ""
+    },
+    "python_310": {
+      "command": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\python.exe --version",
+      "returncode": 0,
+      "stdout": "Python 3.10.2",
+      "stderr": ""
+    },
+    "jupyter": {
+      "command": "C:\\Temp\\e5tf310\\Scripts\\python.exe -m jupyter --version",
+      "returncode": 0,
+      "stdout": "Selected Jupyter core packages...\nIPython          : 8.39.0\nipykernel        : 6.29.5\nipywidgets       : not installed\njupyter_client   : 7.4.9\njupyter_core     : 5.9.1\njupyter_server   : 2.19.0\njupyterlab       : not installed\nnbclient         : 0.10.4\nnbconvert        : 7.17.1\nnbformat         : 5.10.4\nnotebook         : 6.5.7\nqtconsole        : not installed\ntraitlets        : 5.15.0",
+      "stderr": ""
+    },
+    "vscode": {
+      "command": "cmd /c D:\\DevTools\\Apps\\Microsoft VS Code\\bin\\code.cmd --version",
+      "returncode": 0,
+      "stdout": "1.117.0\n10c8e557c8b9f9ed0a87f61f1c9a44bde731c409\nx64",
+      "stderr": ""
+    },
+    "vscode_extensions": {
+      "command": "cmd /c D:\\DevTools\\Apps\\Microsoft VS Code\\bin\\code.cmd --list-extensions",
+      "returncode": 0,
+      "stdout": "ms-ceintl.vscode-language-pack-zh-hans\nms-python.debugpy\nms-python.python\nms-python.vscode-pylance\nms-python.vscode-python-envs\nms-toolsai.jupyter\nms-toolsai.jupyter-keymap\nms-toolsai.jupyter-renderers\nms-toolsai.vscode-jupyter-cell-tags\nms-toolsai.vscode-jupyter-slideshow\nopenai.chatgpt\nsonic55.vue-i18n-auto\nvue.volar",
+      "stderr": ""
+    },
+    "conda": {
+      "command": "conda --version",
+      "returncode": -1,
+      "stdout": "",
+      "stderr": "[WinError 2] 系统找不到指定的文件。"
+    },
+    "adb": {
+      "command": "E:\\development\\Android\\sdk\\platform-tools\\adb.exe version",
+      "returncode": 0,
+      "stdout": "Android Debug Bridge version 1.0.41\nVersion 36.0.0-13206524\nInstalled as E:\\development\\Android\\sdk\\platform-tools\\adb.exe\nRunning on Windows 10.0.19045",
+      "stderr": ""
+    },
+    "adb_devices": {
+      "command": "E:\\development\\Android\\sdk\\platform-tools\\adb.exe devices -l",
+      "returncode": 0,
+      "stdout": "List of devices attached",
+      "stderr": ""
+    },
+    "emulator": {
+      "command": "E:\\development\\Android\\sdk\\emulator\\emulator.exe -version",
+      "returncode": 0,
+      "stdout": "Android emulator version 36.3.10.0 (build_id 14472402) (CL:N/A)\nCopyright (C) 2006-2024 The Android Open Source Project and many others.\nThis program is a derivative of the QEMU CPU emulator (www.qemu.org).\n\n  This software is licensed under the terms of the GNU General Public\n  License version 2, as published by the Free Software Foundation, and\n  may be copied, distributed, and modified under those terms.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\nINFO         | Android emulator version 36.3.10.0 (build_id 14472402) (CL:N/A)\nINFO         | Graphics backend: gfxstream",
+      "stderr": ""
+    },
+    "avd_list": {
+      "command": "E:\\development\\Android\\sdk\\emulator\\emulator.exe -list-avds",
+      "returncode": 0,
+      "stdout": "Pixel_8",
+      "stderr": ""
+    },
+    "java_21": {
+      "command": "D:\\DevTools\\Environments\\DevEnv\\JDK\\jdk21\\bin\\java.exe -version",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "java version \"21\" 2023-09-19 LTS\nJava(TM) SE Runtime Environment (build 21+35-LTS-2513)\nJava HotSpot(TM) 64-Bit Server VM (build 21+35-LTS-2513, mixed mode, sharing)"
+    },
+    "javac_21": {
+      "command": "D:\\DevTools\\Environments\\DevEnv\\JDK\\jdk21\\bin\\javac.exe -version",
+      "returncode": 0,
+      "stdout": "javac 21",
+      "stderr": ""
+    },
+    "java_11": {
+      "command": "E:\\development\\Java\\jdk11\\bin\\java.exe -version",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "openjdk version \"11.0.10\" 2021-01-19\nOpenJDK Runtime Environment (build 11.0.10+0-b96-7249189)\nOpenJDK 64-Bit Server VM (build 11.0.10+0-b96-7249189, mixed mode)"
+    },
+    "javac_11": {
+      "command": "E:\\development\\Java\\jdk11\\bin\\javac.exe -version",
+      "returncode": 0,
+      "stdout": "javac 11.0.10",
+      "stderr": ""
+    }
+  },
+  "android_build": {
+    "log_path": "C:\\Temp\\e1_android_build_output.txt",
+    "success": true,
+    "apk": "H:\\福建师范大学\\大三下\\软件实践研发（3）\\E2_2_Compose_Layout\\ComposeAiDemo\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+    "apk_exists": true,
+    "apk_size": 9499587,
+    "tail": "> Task :app:compileDebugJavaWithJavac NO-SOURCE\n> Task :app:mergeDebugShaders UP-TO-DATE\n> Task :app:compileDebugShaders NO-SOURCE\n> Task :app:generateDebugAssets UP-TO-DATE\n> Task :app:mergeDebugAssets UP-TO-DATE\n> Task :app:compressDebugAssets UP-TO-DATE\n> Task :app:desugarDebugFileDependencies UP-TO-DATE\n> Task :app:dexBuilderDebug UP-TO-DATE\n> Task :app:mergeDebugGlobalSynthetics UP-TO-DATE\n> Task :app:processDebugJavaRes UP-TO-DATE\n> Task :app:mergeDebugJavaResource UP-TO-DATE\n> Task :app:checkDebugDuplicateClasses UP-TO-DATE\n> Task :app:mergeExtDexDebug UP-TO-DATE\n> Task :app:mergeLibDexDebug UP-TO-DATE\n> Task :app:mergeProjectDexDebug UP-TO-DATE\n> Task :app:mergeDebugJniLibFolders UP-TO-DATE\n> Task :app:mergeDebugNativeLibs UP-TO-DATE\n> Task :app:stripDebugDebugSymbols UP-TO-DATE\n> Task :app:validateSigningDebug UP-TO-DATE\n> Task :app:writeDebugAppMetadata UP-TO-DATE\n> Task :app:writeDebugSigningConfigVersions UP-TO-DATE\n> Task :app:packageDebug UP-TO-DATE\n> Task :app:createDebugApkListingFileRedirect UP-TO-DATE\n> Task :app:assembleDebug UP-TO-DATE\n\n[Incubating] Problems report is available at: file:///H:/%E7%A6%8F%E5%BB%BA%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6/%E5%A4%A7%E4%B8%89%E4%B8%8B/%E8%BD%AF%E4%BB%B6%E5%AE%9E%E8%B7%B5%E7%A0%94%E5%8F%91%EF%BC%883%EF%BC%89/E2_2_Compose_Layout/ComposeAiDemo/build/reports/problems/problems-report.html\n\nDeprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.\n\nYou can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.\n\nFor more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.\n\nBUILD SUCCESSFUL in 1m\n35 actionable tasks: 35 up-to-date"
+  }
+}

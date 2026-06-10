@@ -1,0 +1,122 @@
+=== git ===
+$ git --version
+returncode: 0
+git version 2.51.0.windows.1
+
+=== python_default ===
+$ python --version
+returncode: 0
+Python 3.10.2
+
+=== python_310 ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python310\python.exe --version
+returncode: 0
+Python 3.10.2
+
+=== jupyter ===
+$ C:\Temp\e5tf310\Scripts\python.exe -m jupyter --version
+returncode: 0
+Selected Jupyter core packages...
+IPython          : 8.39.0
+ipykernel        : 6.29.5
+ipywidgets       : not installed
+jupyter_client   : 7.4.9
+jupyter_core     : 5.9.1
+jupyter_server   : 2.19.0
+jupyterlab       : not installed
+nbclient         : 0.10.4
+nbconvert        : 7.17.1
+nbformat         : 5.10.4
+notebook         : 6.5.7
+qtconsole        : not installed
+traitlets        : 5.15.0
+
+=== vscode ===
+$ cmd /c D:\DevTools\Apps\Microsoft VS Code\bin\code.cmd --version
+returncode: 0
+1.117.0
+10c8e557c8b9f9ed0a87f61f1c9a44bde731c409
+x64
+
+=== vscode_extensions ===
+$ cmd /c D:\DevTools\Apps\Microsoft VS Code\bin\code.cmd --list-extensions
+returncode: 0
+ms-ceintl.vscode-language-pack-zh-hans
+ms-python.debugpy
+ms-python.python
+ms-python.vscode-pylance
+ms-python.vscode-python-envs
+ms-toolsai.jupyter
+ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
+ms-toolsai.vscode-jupyter-cell-tags
+ms-toolsai.vscode-jupyter-slideshow
+openai.chatgpt
+sonic55.vue-i18n-auto
+vue.volar
+
+=== conda ===
+$ conda --version
+returncode: -1
+[WinError 2] 系统找不到指定的文件。
+
+=== adb ===
+$ E:\development\Android\sdk\platform-tools\adb.exe version
+returncode: 0
+Android Debug Bridge version 1.0.41
+Version 36.0.0-13206524
+Installed as E:\development\Android\sdk\platform-tools\adb.exe
+Running on Windows 10.0.19045
+
+=== adb_devices ===
+$ E:\development\Android\sdk\platform-tools\adb.exe devices -l
+returncode: 0
+List of devices attached
+
+=== emulator ===
+$ E:\development\Android\sdk\emulator\emulator.exe -version
+returncode: 0
+Android emulator version 36.3.10.0 (build_id 14472402) (CL:N/A)
+Copyright (C) 2006-2024 The Android Open Source Project and many others.
+This program is a derivative of the QEMU CPU emulator (www.qemu.org).
+
+  This software is licensed under the terms of the GNU General Public
+  License version 2, as published by the Free Software Foundation, and
+  may be copied, distributed, and modified under those terms.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+INFO         | Android emulator version 36.3.10.0 (build_id 14472402) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+
+=== avd_list ===
+$ E:\development\Android\sdk\emulator\emulator.exe -list-avds
+returncode: 0
+Pixel_8
+
+=== java_21 ===
+$ D:\DevTools\Environments\DevEnv\JDK\jdk21\bin\java.exe -version
+returncode: 0
+java version "21" 2023-09-19 LTS
+Java(TM) SE Runtime Environment (build 21+35-LTS-2513)
+Java HotSpot(TM) 64-Bit Server VM (build 21+35-LTS-2513, mixed mode, sharing)
+
+=== javac_21 ===
+$ D:\DevTools\Environments\DevEnv\JDK\jdk21\bin\javac.exe -version
+returncode: 0
+javac 21
+
+=== java_11 ===
+$ E:\development\Java\jdk11\bin\java.exe -version
+returncode: 0
+openjdk version "11.0.10" 2021-01-19
+OpenJDK Runtime Environment (build 11.0.10+0-b96-7249189)
+OpenJDK 64-Bit Server VM (build 11.0.10+0-b96-7249189, mixed mode)
+
+=== javac_11 ===
+$ E:\development\Java\jdk11\bin\javac.exe -version
+returncode: 0
+javac 11.0.10
